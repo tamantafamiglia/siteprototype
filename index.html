@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello Prototype de site</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    
+     <!-- une div qui contient tout-->
+    <div id="wrapper">
+      
+       <!-- la navigation= : bouton/titre et menu/liste -->
+      <nav>
+        <div id="openbtn" onclick="openNav()"><span>&#9776;</span> Hello !</div>
+        
+        <div id="menu">
+          <div id="closebtn" onclick="closeNav()"><span>&times;</span> Hello !</div>
+          <ul>
+            <li onclick="openpage(1), closeNav()">Ouvrir page 01</li>
+            <li onclick="openpage(2), closeNav()">Ouvrir page 02</li>
+            <li onclick="openpage(3), closeNav()">Ouvrir page 03</li>
+          </ul>
+        </div>
+      </nav>
+      
+   <!-- ici la div qui contient la page qui va être chargée -->
+      <div id="content"></div>
+    
+    </div>
+
+    
+
+    <!-- On importe le javascript -->
+    <script src="script.js" defer></script>
+  </body>
+</html>
